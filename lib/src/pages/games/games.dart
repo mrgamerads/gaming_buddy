@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gaming_buddy/src/models/item_model.dart';
+import 'package:gaming_buddy/src/pages/games/body.dart';
 
 class GamesScreen extends StatelessWidget {
   const GamesScreen ({Key? key}) : super(key: key);
@@ -7,10 +8,7 @@ class GamesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(child: Image.asset('lib/src/imgs/img_jogos/Halo_Infinite.png'))
-        ],
+      body: Body(
       ),
     );
   }

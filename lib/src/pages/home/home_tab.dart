@@ -7,6 +7,7 @@ class HomeTab extends StatefulWidget {
   const HomeTab({Key? key}) : super(key: key);
 
 
+
   @override
   State<HomeTab> createState() => _HomeTabState();
 }
@@ -28,7 +29,7 @@ class _HomeTabState extends State<HomeTab> {
           children: [
             Image.asset('lib/src/imgs/5.png', height: 200,),
           ],
-          ),
+        ),
         actions: [
           Padding(
             padding: const EdgeInsets.only(
@@ -36,7 +37,7 @@ class _HomeTabState extends State<HomeTab> {
               right: 15,
             ),
             child: GestureDetector(
-              onTap: (){},
+              onTap: () {},
               child: Badge(
                 badgeColor: Colors.red,
                 badgeContent: const Text ('2', style: TextStyle(
@@ -50,7 +51,7 @@ class _HomeTabState extends State<HomeTab> {
             ),
           ),
         ],
-        ),
+      ),
 
       //Body
       body: SingleChildScrollView(
@@ -79,11 +80,11 @@ class _HomeTabState extends State<HomeTab> {
                     size: 21,),
 
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(60),
-                    borderSide: const BorderSide(
-                      width: 0,
-                      style: BorderStyle.none,
-                    )
+                      borderRadius: BorderRadius.circular(60),
+                      borderSide: const BorderSide(
+                        width: 0,
+                        style: BorderStyle.none,
+                      )
                   ),
                 ),
               ),
@@ -96,7 +97,7 @@ class _HomeTabState extends State<HomeTab> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const <Widget>[
-                  Text (
+                  Text(
                     "Ação",
                     style: TextStyle(
                       color: Colors.white,
@@ -112,11 +113,11 @@ class _HomeTabState extends State<HomeTab> {
               height: 20,
             ),
             GestureDetector(
-              onTap: (){
+              onTap: () {
                 Navigator.of(context).push(
-                  MaterialPageRoute(builder: (c){
-                    return const GamesScreen();
-                  })
+                    MaterialPageRoute(builder: (c) {
+                      return const GamesScreen();
+                    })
                 );
               },
               child: SizedBox(
@@ -125,10 +126,14 @@ class _HomeTabState extends State<HomeTab> {
                   physics: const BouncingScrollPhysics(),
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
-                    makeItem(image: 'lib/src/imgs/img_jogos/gears_5.jpg', title: 'Gears 5'),
-                    makeItem(image: 'lib/src/imgs/img_jogos/gotham_knights.jpg', title: 'Gotham Knights'),
-                    makeItem(image: 'lib/src/imgs/img_jogos/far_cry_6.png', title: 'FarCry 6'),
-                    makeItem(image: 'lib/src/imgs/img_jogos/gta_v.png', title: 'GTA V'),
+                    makeItem(image: 'lib/src/imgs/img_jogos/gears_5.jpg',
+                        title: 'Gears 5'),
+                    makeItem(image: 'lib/src/imgs/img_jogos/gotham_knights.jpg',
+                        title: 'Gotham Knights'),
+                    makeItem(image: 'lib/src/imgs/img_jogos/far_cry_6.png',
+                        title: 'FarCry 6'),
+                    makeItem(image: 'lib/src/imgs/img_jogos/gta_v.png',
+                        title: 'GTA V'),
                   ],
                 ),
               ),
@@ -140,7 +145,7 @@ class _HomeTabState extends State<HomeTab> {
             ),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),
-              child: Text (
+              child: Text(
                 "Aventura",
                 style: TextStyle(
                   color: Colors.white,
@@ -154,9 +159,9 @@ class _HomeTabState extends State<HomeTab> {
               height: 20,
             ),
             GestureDetector(
-              onTap: (){
+              onTap: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (c){
+                    MaterialPageRoute(builder: (c) {
                       return GamesScreen();
                     })
                 );
@@ -167,10 +172,16 @@ class _HomeTabState extends State<HomeTab> {
                   physics: const BouncingScrollPhysics(),
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
-                    makeItem(image: 'lib/src/imgs/img_jogos/ac_valhalla_1.jpg', title: 'Assassins Creed Valhalla'),
-                    makeItem(image: 'lib/src/imgs/img_jogos/download.jpg', title: 'Elden Ring'),
-                    makeItem(image: 'lib/src/imgs/img_jogos/Horizon-Forbidden-West-titulo.jpg', title: 'Horizon: Forbidden West'),
-                    makeItem(image: 'lib/src/imgs/img_jogos/forza_horizon_5.jpg', title: 'Forza Horizon 5'),
+                    makeItem(image: 'lib/src/imgs/img_jogos/ac_valhalla_1.jpg',
+                        title: 'Assassins Creed Valhalla'),
+                    makeItem(image: 'lib/src/imgs/img_jogos/download.jpg',
+                        title: 'Elden Ring'),
+                    makeItem(
+                        image: 'lib/src/imgs/img_jogos/Horizon-Forbidden-West-titulo.jpg',
+                        title: 'Horizon: Forbidden West'),
+                    makeItem(
+                        image: 'lib/src/imgs/img_jogos/forza_horizon_5.jpg',
+                        title: 'Forza Horizon 5'),
                   ],
                 ),
               ),
@@ -182,7 +193,7 @@ class _HomeTabState extends State<HomeTab> {
             ),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),
-              child: Text (
+              child: Text(
                 "FPS",
                 style: TextStyle(
                   color: Colors.white,
@@ -196,9 +207,9 @@ class _HomeTabState extends State<HomeTab> {
               height: 20,
             ),
             GestureDetector(
-              onTap: (){
+              onTap: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (c){
+                    MaterialPageRoute(builder: (c) {
                       return const GamesScreen();
                     })
                 );
@@ -209,10 +220,17 @@ class _HomeTabState extends State<HomeTab> {
                   physics: const BouncingScrollPhysics(),
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
-                    makeItem(image: 'lib/src/imgs/img_jogos/destiny-2-game-destiny-logo.jpg', title: 'Destiny 2'),
-                    makeItem(image: 'lib/src/imgs/img_jogos/valorant-logo-FAB2CA0E55-seeklogo.com.png', title: 'Valorant'),
-                    makeItem(image: 'lib/src/imgs/img_jogos/call_of_duty_warzone.jpg', title: 'Call Of Duty: Warzone'),
-                    makeItem(image: 'lib/src/imgs/img_jogos/Halo_Infinite.png', title: 'Halo Infinite'),
+                    makeItem(
+                        image: 'lib/src/imgs/img_jogos/destiny-2-game-destiny-logo.jpg',
+                        title: 'Destiny 2'),
+                    makeItem(
+                        image: 'lib/src/imgs/img_jogos/valorant-logo-FAB2CA0E55-seeklogo.com.png',
+                        title: 'Valorant'),
+                    makeItem(
+                        image: 'lib/src/imgs/img_jogos/call_of_duty_warzone.jpg',
+                        title: 'Call Of Duty: Warzone'),
+                    makeItem(image: 'lib/src/imgs/img_jogos/Halo_Infinite.png',
+                        title: 'Halo Infinite'),
                   ],
                 ),
               ),
@@ -224,7 +242,7 @@ class _HomeTabState extends State<HomeTab> {
             ),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),
-              child: Text (
+              child: Text(
                 "RPG",
                 style: TextStyle(
                   color: Colors.white,
@@ -238,9 +256,9 @@ class _HomeTabState extends State<HomeTab> {
               height: 20,
             ),
             GestureDetector(
-              onTap: (){
+              onTap: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (c){
+                    MaterialPageRoute(builder: (c) {
                       return const GamesScreen();
                     })
                 );
@@ -251,10 +269,14 @@ class _HomeTabState extends State<HomeTab> {
                   physics: const BouncingScrollPhysics(),
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
-                    makeItem(image: 'lib/src/imgs/img_jogos/197480.jpg', title: 'Zelda: Breath Of The Wild'),
-                    makeItem(image: 'lib/src/imgs/img_jogos/diablo_3.jpg', title: 'Diablo 3'),
-                    makeItem(image: 'lib/src/imgs/img_jogos/genshin_impact.jpg', title: 'Genshin Impact'),
-                    makeItem(image: 'lib/src/imgs/img_jogos/fallout_76.jpg', title: 'Fallout 76'),
+                    makeItem(image: 'lib/src/imgs/img_jogos/197480.jpg',
+                        title: 'Zelda: Breath Of The Wild'),
+                    makeItem(image: 'lib/src/imgs/img_jogos/diablo_3.jpg',
+                        title: 'Diablo 3'),
+                    makeItem(image: 'lib/src/imgs/img_jogos/genshin_impact.jpg',
+                        title: 'Genshin Impact'),
+                    makeItem(image: 'lib/src/imgs/img_jogos/fallout_76.jpg',
+                        title: 'Fallout 76'),
                   ],
                 ),
               ),
@@ -264,11 +286,9 @@ class _HomeTabState extends State<HomeTab> {
       ),
 
     );
-
-
   }
 
-  Widget makeItem({image, title}){
+  Widget makeItem({image, title}) {
     return AspectRatio(
       aspectRatio: 1 / 1,
       child: Container(
@@ -295,7 +315,7 @@ class _HomeTabState extends State<HomeTab> {
           child: Align(
             alignment: Alignment.bottomLeft,
             child: Text(title, style: const TextStyle(
-                color: Colors.white,
+              color: Colors.white,
             ),
             ),
           ),
