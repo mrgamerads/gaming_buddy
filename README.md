@@ -2,6 +2,17 @@
 
 A new Flutter project.
 
+Project made with Flutter + Dart. 
+
+-- Install Recomendations
+- Android Studio
+- Flutter 
+- Flutter adds: 
+-   Mask Input Formatter: https://pub.dev/packages/mask_text_input_formatter
+-   badges: https://pub.dev/packages/badges
+
+IDEs is from your preference: (I used Android Studio). 
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
