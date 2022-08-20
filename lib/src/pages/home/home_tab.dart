@@ -6,6 +6,7 @@ import 'package:gaming_buddy/src/pages/games/games.dart';
 class HomeTab extends StatefulWidget {
   const HomeTab({Key? key}) : super(key: key);
 
+
   @override
   State<HomeTab> createState() => _HomeTabState();
 }
@@ -198,7 +199,7 @@ class _HomeTabState extends State<HomeTab> {
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (c){
-                      return GamesScreen();
+                      return const GamesScreen();
                     })
                 );
               },
@@ -240,7 +241,7 @@ class _HomeTabState extends State<HomeTab> {
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (c){
-                      return GamesScreen();
+                      return const GamesScreen();
                     })
                 );
               },
