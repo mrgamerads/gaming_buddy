@@ -23,6 +23,7 @@ class _SignInScreenState extends State<SignInScreen> {
     SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
       systemNavigationBarColor: Colors.white,
       systemNavigationBarIconBrightness: Brightness.dark,
+      statusBarColor: Colors.black,
     ),);
   }
 
@@ -95,7 +96,8 @@ class _SignInScreenState extends State<SignInScreen> {
                         },
                         child: const Text ('Entrar', style: TextStyle(
                           fontSize: 18,
-                        ),),
+                          ),
+                        ),
                       ),
                     ),
                     //Esqueceu a senha

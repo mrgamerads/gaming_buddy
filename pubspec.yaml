@@ -85,6 +85,7 @@ flutter:
   - lib/src/imgs/img_jogos/forza_horizon_5.jpg
   - lib/src/imgs/img_jogos/genshin_impact.jpg
   - lib/src/imgs/img_jogos/Halo_Infinite.png
+  - lib/src/imgs/img_jogos/elden_ring.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
