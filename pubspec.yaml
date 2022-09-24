@@ -86,6 +86,11 @@ flutter:
   - lib/src/imgs/img_jogos/genshin_impact.jpg
   - lib/src/imgs/img_jogos/Halo_Infinite.png
   - lib/src/imgs/img_jogos/elden_ring.png
+  - lib/src/imgs/img_perfil/Screenshot_7.png
+  - lib/src/imgs/img_perfil/João Maria.png
+  - lib/src/imgs/img_jogos/Destiny2 logo.png
+  - lib/src/imgs/img_perfil/Chat E OUTROS 12.png
+  - lib/src/imgs/img_perfil/bloco social.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
