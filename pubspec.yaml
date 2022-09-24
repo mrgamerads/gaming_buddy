@@ -91,6 +91,13 @@ flutter:
   - lib/src/imgs/img_jogos/Destiny2 logo.png
   - lib/src/imgs/img_perfil/Chat E OUTROS 12.png
   - lib/src/imgs/img_perfil/bloco social.png
+  - lib/src/imgs/img_perfil/greg.jpg
+  - lib/src/imgs/img_perfil/james.jpg
+  - lib/src/imgs/img_perfil/john.jpg
+  - lib/src/imgs/img_perfil/olivia.jpg
+  - lib/src/imgs/img_perfil/sam.jpg
+  - lib/src/imgs/img_perfil/sophia.jpg
+  - lib/src/imgs/img_perfil/steven.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
