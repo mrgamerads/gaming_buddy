@@ -3,6 +3,8 @@ import 'package:gaming_buddy/src/widgets/category_selector.dart';
 import 'package:gaming_buddy/src/widgets/favorite_contacts.dart';
 import 'package:gaming_buddy/src/models/message_model.dart';
 
+import '../../widgets/recent_chats.dart';
+
 class chat extends StatefulWidget {
   const chat({Key? key}) : super(key: key);
 
@@ -15,19 +17,21 @@ class _chatState extends State<chat> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
+        centerTitle: true,
         leading: IconButton(
           icon: const Icon(Icons.menu),
           iconSize: 30.0,
           color: Colors.white,
           onPressed: () {},
         ),
-        title: const Text('Chat',
-            style: TextStyle(
-              fontSize: 28,
-          ),
+        title: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset('lib/src/imgs/5.png', height: 200,),
+          ],
         ),
         backgroundColor: Colors.black,
-        elevation: 0.0,
         actions: <Widget>[
           IconButton(
             icon: const Icon(Icons.search),
@@ -37,39 +41,25 @@ class _chatState extends State<chat> {
           ),
         ],
       ),
+      
+      //chat      
       body: Column(
         children: <Widget>[
           const CategorySelector(),
           Expanded(
             child: Container(
-              height: 500.0,
+              height: 200,
               decoration: BoxDecoration(
-                color: Colors.grey.withAlpha(600),
+                color: Colors.red.withAlpha(600),
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(30),
                   topRight: Radius.circular(30),
                 )
               ),
               child: Column(
-                children: <Widget>[
-                  const FavoriteContacts(),
-                  Expanded(
-                    child: Container(
-                      decoration: const BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(30),
-                            topRight: Radius.circular(30),
-                          ),
-                      ),
-                      child: ListView.builder(
-                          itemCount: chats.length,
-                          itemBuilder: (BuildContext context, int index){
-                            return ;
-                          }
-                      ),
-                    ),
-                  ),
+                children: const <Widget>[
+                   FavoriteContacts(),
+                   RecentChats(),
                 ],
               ),
             ),

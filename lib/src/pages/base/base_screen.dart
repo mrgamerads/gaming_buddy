@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gaming_buddy/src/pages/home/home_tab.dart';
 import 'package:gaming_buddy/src/pages/buddy/buddy.dart';
 import 'package:gaming_buddy/src/pages/chat/chat.dart';
+import 'package:gaming_buddy/src/pages/perfil/perfil.dart';
 
 class BaseScreen extends StatefulWidget {
   const BaseScreen({Key? key}) : super(key: key);
@@ -20,11 +21,11 @@ class _BaseScreenState extends State<BaseScreen> {
         body: PageView(
           physics: const NeverScrollableScrollPhysics(),
           controller: pageController,
-          children: [
-            const HomeTab(),
-            const BuddyPage(),
-            const chat(),
-            Container(color: Colors.purple,),
+          children: const [
+            HomeTab(),
+            BuddyPage(),
+            chat(),
+            Perfil(),
           ],
         ),
         bottomNavigationBar: Container(

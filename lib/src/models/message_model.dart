@@ -26,61 +26,61 @@ final User matheus = User(id: 1, name: 'Matheus', imageUrl: 'lib/src/imgs/img_pe
 final User joao = User(id: 2, name: 'João', imageUrl: 'lib/src/imgs/img_perfil/james.jpg');
 final User marcos = User(id: 3, name: 'Marcos', imageUrl: 'lib/src/imgs/img_perfil/john.jpg');
 final User olivia = User(id: 4, name: 'Olivia', imageUrl: 'lib/src/imgs/img_perfil/olivia.jpg');
-final User samuel = User(id: 5, name: 'Samuel', imageUrl: 'lib/src/imgs/img_perfil/sam.jpg');
+final User maria = User(id: 5, name: 'Maria', imageUrl: 'lib/src/imgs/img_perfil/sam.jpg');
 final User sofia = User(id: 6, name: 'Sofia', imageUrl: 'lib/src/imgs/img_perfil/sophia.jpg');
 final User fernando = User(id: 7, name: 'Fernando', imageUrl: 'lib/src/imgs/img_perfil/steven.jpg');
 
 // FAVORITE CONTACTS
-List<User> favorites = [samuel, fernando, olivia, joao, matheus];
+List<User> favorites = [maria, fernando, olivia, joao, matheus];
 
 // EXAMPLE CHATS ON HOME SCREEN
 List<Message> chats = [
   Message(
     sender: joao,
     time: '5:30 PM',
-    text: 'Hey, how\'s it going? What did you do today?',
+    text: 'Boa noite. Sábado estou livre para jogar.',
     isLiked: false,
     unread: true,
   ),
   Message(
     sender: olivia,
     time: '4:30 PM',
-    text: 'Hey, how\'s it going? What did you do today?',
+    text: 'Oie, tudo bem? A gente já está te esperando no esquadrão.',
     isLiked: false,
     unread: true,
   ),
   Message(
     sender: marcos,
     time: '3:30 PM',
-    text: 'Hey, how\'s it going? What did you do today?',
+    text: 'Opa man, vou me atrasar um pouco, cê me espera né?',
     isLiked: false,
     unread: false,
   ),
   Message(
     sender: sofia,
     time: '2:30 PM',
-    text: 'Hey, how\'s it going? What did you do today?',
+    text: 'Nossa olha isso que o Marcos me enviou hoje kkkkkkk',
     isLiked: false,
     unread: true,
   ),
   Message(
     sender: fernando,
     time: '1:30 PM',
-    text: 'Hey, how\'s it going? What did you do today?',
+    text: 'Fala grande, blz? Ow tem vaga ai nesse squad pra amanhã no Destiny 2?',
     isLiked: false,
     unread: false,
   ),
   Message(
-    sender: samuel,
+    sender: maria,
     time: '12:30 PM',
-    text: 'Hey, how\'s it going? What did you do today?',
+    text: 'Oie <3. To doidinha pra jogar Gears, bora?',
     isLiked: false,
     unread: false,
   ),
   Message(
     sender: matheus,
     time: '11:30 AM',
-    text: 'Hey, how\'s it going? What did you do today?',
+    text: 'Ow doido, não esquece de fazer aquela raid marota comigo hoje',
     isLiked: false,
     unread: false,
   ),
@@ -90,43 +90,43 @@ List<Message> chats = [
 List<Message> messages = [
   Message(
     sender: joao,
-    time: '5:30 PM',
-    text: 'Hey, how\'s it going? What did you do today?',
+    time: '1:30 PM',
+    text: '10/10 fechado então :)',
     isLiked: true,
     unread: true,
   ),
   Message(
     sender: currentUser,
-    time: '4:30 PM',
-    text: 'Just walked my doge. She was super duper cute. The best pupper!!',
+    time: '2:00 PM',
+    text: 'Perfeito, combinado então, vou avisar a galera',
     isLiked: false,
     unread: true,
   ),
   Message(
     sender: joao,
-    time: '3:45 PM',
-    text: 'How\'s the doggo?',
+    time: '2:05 PM',
+    text: 'vou levar minha mãe na casa da amiga dela de carro, daí umas 4PM devo estar livre',
     isLiked: false,
     unread: true,
   ),
   Message(
     sender: joao,
-    time: '3:15 PM',
-    text: 'All the food',
+    time: '2:15 PM',
+    text: 'Então...',
     isLiked: true,
     unread: true,
   ),
   Message(
     sender: currentUser,
     time: '2:30 PM',
-    text: 'Nice! What kind of food did you eat?',
+    text: 'Pow massa! Que horas mais ou menos?',
     isLiked: false,
     unread: true,
   ),
   Message(
     sender: joao,
-    time: '2:00 PM',
-    text: 'I ate so much food today.',
+    time: '3:00 PM',
+    text: 'Boa noite. Sábado estou livre para jogar.',
     isLiked: false,
     unread: true,
   ),

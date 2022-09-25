@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gaming_buddy/src/models/message_model.dart';
+import 'package:gaming_buddy/src/pages/chat/chat_screen.dart';
 
 class FavoriteContacts extends StatelessWidget {
   const FavoriteContacts({Key? key}) : super(key: key);
@@ -43,26 +44,32 @@ class FavoriteContacts extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 itemCount: favorites.length,
                 itemBuilder: (BuildContext context, int index) {
-                return Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Column(
-                    children: <Widget>[
-                      CircleAvatar(
-                          radius: 35,
-                          backgroundImage: AssetImage(favorites[index].imageUrl),
-                      ),
-                      const SizedBox(
-                        height: 6.0,
-                      ),
-                      Text(
-                          favorites[index].name,
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w400,
-                          ),
-                      ),
-                    ],
+                return GestureDetector(
+                  onTap: () => Navigator.push(context, MaterialPageRoute(
+                    builder: (_) => ChatScreen(user: favorites[index]),
+                  ),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Column(
+                      children: <Widget>[
+                        CircleAvatar(
+                            radius: 35,
+                            backgroundImage: AssetImage(favorites[index].imageUrl),
+                        ),
+                        const SizedBox(
+                          height: 6.0,
+                        ),
+                        Text(
+                            favorites[index].name,
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
+                            ),
+                        ),
+                      ],
+                    ),
                   ),
                 );
               },

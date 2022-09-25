@@ -9,13 +9,20 @@ class BuddyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Feed'),
+        elevation: 0,
+        centerTitle: true,
+        title: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset('lib/src/imgs/5.png', height: 200,),
+          ],
+        ),
         backgroundColor: Colors.black,
         actions: [
           Padding(
             padding: const EdgeInsets.only(
-              top: 15,
-              right: 15,
+              top: 10,
+              right: 10,
             ),
             child: GestureDetector(
               onTap: () {},
@@ -33,7 +40,7 @@ class BuddyPage extends StatelessWidget {
           children: [
             //Feed de Esquadrões
             const SizedBox(
-              height: 40,
+              height: 20,
             ),
 
             GestureDetector(
@@ -45,7 +52,7 @@ class BuddyPage extends StatelessWidget {
                   );
                 },
               child: SizedBox(
-                height: 630,
+                height: 650,
                 child: ListView(
                   physics: const BouncingScrollPhysics(),
                   scrollDirection: Axis.vertical,

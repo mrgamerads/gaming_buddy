@@ -98,6 +98,7 @@ flutter:
   - lib/src/imgs/img_perfil/sam.jpg
   - lib/src/imgs/img_perfil/sophia.jpg
   - lib/src/imgs/img_perfil/steven.jpg
+  - lib/src/imgs/botoes perfil.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
